@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(253, 221, 160);
+    align-content: center;
+}
+
+.navbar-light{
+    background-color: rgb(253, 221, 160);
+}
+
+
+
+.logo {
+    padding: 25px;
+}
+
+nav {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 100px;
+    background: rgb(253, 221, 160);
+    z-index: 100;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    border: 1px solid rgb(71, 49, 15);
+    transition: .5s;
+}
+
+nav #bars {
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 800px) {
+    nav #bars {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(253, 221, 160);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active,
+    a:hover {
+        border: none;
+        color: crimson;
+    }
+    nav ul.show {
+        left: 0;
+    }
+}
+
+.boton{
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(253, 221, 160);
+}
+
+.botons {
+    display: inline-block;
+    background: goldenrod;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.boton .botons:hover{
+    opacity: 90%;
+}
+
+.somos {
+    display: inline-block;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(253, 221, 160);
+    
+}
+
+.personas{
+    display: flex;
+    margin-left: 40px; 
+    padding-left: 50%;
+
+}
+
+.slider{
+    
+    background-color: rgb(253, 221, 160);
+}
+
+
+.footer{
+    height: 150px;
+    background-image: url(img/bottlesbw2.png);
+    /* background-color: black; */
+}

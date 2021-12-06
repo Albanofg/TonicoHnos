@@ -1,0 +1,222 @@
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("img/bottlesbw2.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.seccion {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+
+}
+.headersecciones {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+
+.tienda-item {
+    margin: 30px;
+}
+
+.item-titulo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+
+.item-pb {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    font-size: 24px;
+}
+
+.item-precio {
+    flex-grow: 1;
+    color: #333;
+}
+
+.tienda-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cabeza {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+
+
+.columna {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 1em;
+    
+    margin-top: 10px;
+}
+
+.carrito {
+    display: flex;
+}
+
+.item {
+    width: 45%;
+}
+
+.precio {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cantidad {
+    width: 35%;
+}
+
+.item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+#item-carrito{
+    background-color: rgb(253, 221, 160);
+}
+
+.item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item-imagen {
+    height: 250px;
+}
+
+/* gotita */
+img.card-img-top.item-imagen {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 50%;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cantidad-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.carrito:last-child {
+    border-bottom: 1px solid black;
+}
+
+.carrito:last-child .columna {
+    border: none;
+}
+
+.total-carrito {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.total-carrito-titulo {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.total-carrito-precio {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 20px auto 80px auto;
+    font-size: 2em;
+}
+
+
+.fa-home{
+    color: gold;
+}

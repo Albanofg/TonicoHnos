@@ -1,0 +1,30 @@
+[{
+    "item": "Cocktail",
+    "id": 1,
+    "precio": "750",
+    "imagen": "../img/zztrago.png",
+    "stock": 24
+},
+{
+    "item": "Tónico",
+    "id": 2,
+    "precio": "1100",
+    "imagen": "../img/zzbotella.png",
+    "stock": 12
+},
+{
+    "item": "Gorra",
+    "id": 3,
+    "precio": "980",
+    "imagen": "../img/zzgorra.png",
+    "stock": 10
+},
+{
+    "item": "delantal",
+    "id": 4,
+    "precio": "1020",
+    "imagen": "../img/zzdelantal.png",
+    "stock": 10
+}
+
+]

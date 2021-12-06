@@ -1,0 +1,45 @@
+body {
+    size: 175px;
+    display: grid;
+    width: 100%;
+    place-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background: rgb(253, 221, 160);
+    /* text-align: center; */
+}
+
+
+
+.logo {
+    margin-top: 120px;
+    line-height: 120px;
+}
+
+
+.logo a:hover {
+    opacity: 75%;
+}
+
+.fa-home{
+    color: black;
+}
+
+.boton{
+    text-align: center;
+    padding: 25px;
+    height: 120px;
+}
+
+.botons {
+    display: inline-block;
+    text-align: center;
+    background: goldenrod;
+    border: none;
+    padding: 8px;
+    color: black;
+    margin: 20px 20px 20px 20px ;
+    border-radius: 6px;
+    font-size: 16px;
+}
+

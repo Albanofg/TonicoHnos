@@ -1,0 +1,13 @@
+[{
+    "nombre": "Agustín Sangasis",
+    "edad": 33,
+    "puesto": "Bartender",
+    "foto": "../img/zanegro.png"
+},
+{
+    "nombre": "Albano González",
+    "edad": 34,
+    "puesto": "Bartender",
+    "foto": "../img/zablanco.png"
+    }
+]

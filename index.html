@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />   
+    
+    <title>TónicoHnos.</title>
+    <link rel="icon" href="/img/tonicologo.png">
+    <!-- css albano -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <!-- nav bar -->
+  <nav>
+    <label class="logo"><a href="index.html"><img src="/img/tonicoletras2.png" height="35px"></a></label>
+    <ul>
+        
+        <li id="but1" class="buttons"><a href="#">SERVICIOS</a></li><!--baja a botones-->
+        
+        <li id="but2" class="buttons"><a href="carrito4.html">PRODUCTOS</a></li><!--link a carrito-->
+        
+    </ul>
+    <label id="bars">
+        <i class="fas fa-glass-martini"></i>
+    </label>
+    
+  </nav>
+
+  <!-- imagen fondo negroni -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/znegroni.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/zoldcuban.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/zmojito.png" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- <img src="img/znegroni.png" width="100%"> -->
+  
+  
+  <!-- botones funciones -->
+
+  <section class="boton">
+    <button class="botons" id="muestraSomos">¿Quiénes somos?</button><!--muestra párrafo somos-->
+    <button class="botons" id="muestraMedia">Videos</button><!--muestra carousel videos-->
+    <a href="presup.html"><button class="botons" id="aPresupuestos">Contacto y Calculdora de presupuesto</button></a><!--link a presupuestos-->
+    <a href="servicios.html"><button class="botons" type="button">Detalles de los servicios</button></a><!-- link a servicios -->
+    
+  </section>
+
+
+  <!-- párrafo somos -->
+
+  <section id="somos">
+    <p  class="somos">Somos una empresa de amigos, con 10 años dando vueltas entre distintas barras de restaurantes, bares y fiestas, vimos la posibilidad de mejorar el servicio a un nivel superior con <strong>coctelería clásica y de autor.</strong> Te invitamos a contactarte con nosotros y así diseñemos juntos la barra de tu fiesta para que esa noche quede tanto en vos como en tus invitados como una noche <strong>única y memorable.</strong></p>
+    <div id="personas" class="personas">
+
+    </div>
+  </section>
+  
+  <!-- carousel videos youtube -->
+
+  <section id="carousel" class="slider">
+    <div id="carouselBoton" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <iframe class="d-block w-100" height="720px" src="https://www.youtube.com/embed/siqXhjXLkKY" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe class="d-block w-100" height="720px" src="https://www.youtube.com/embed/9ygtJyRbPZY" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe class="d-block w-100" height="720px" src="https://www.youtube.com/embed/vjfpNxVA-UA" allowfullscreen></iframe>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoton" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBoton" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  
+  
+
+<!-- contacto -->
+
+  <footer class="footer">
+    
+  </footer>
+
+<!-- scripts acá abajo -->
+<!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<!-- bootstrapJS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- js albano -->
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TonicoHnos.</title>
+    <link rel="icon" href="/img/tonicologo.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="presupcss.css">
+
+</head>
+
+<body>
+
+    <!--LOGO Y VUELTA A PRINCIPAL-->
+
+    <div class="logo">
+        <a href="index.html"><img src="/img/tonicoletras.png" height="75px">
+        <i class="fas fa-home" text-decoration:"none"></i></a>
+    </div>
+
+    <!--ICONOS CONTACTO-->
+
+    <div class="wrapper">
+
+        <div class="button">
+            <a href="https://www.instagram.com/tonicohnos/" target="_blank" style="color: black; text-decoration: none;">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span>instagram</span>
+            </a>
+        </div>
+        <div class="button">
+            <a href="https://wa.me/+543407411721" target="_blank" style="color: black; text-decoration: none;">
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <span>whatsapp</span>
+            </a>
+        </div>
+        <div class="button">
+            <a href="mailto:tonicohnos@gmail.com" target="_blank" style="color: black; text-decoration: none;">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span>mail</span>
+            </a>
+        </div>
+    </div>
+
+    <!--FORMULARIO-->
+
+    <div name="formulario" class="container">
+        <form>
+            
+            <div class="form-group">
+                <label for="txtNombre">Nombre</label>
+                <input class="controls" type="text" name="nombres" id="txtNombre" placeholder="Ingrese su Nombre" onkeypress="return /[a-z ]/i.test(event.key)" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="txtContacto">Contacto</label>
+                <input class="controls" type="text" name="contacto" id="txtContacto" placeholder="Info de contacto (mail o teléfono)" onkeypress="return /[a-z ]/i.test(event.key)" required>
+            </div>
+
+            <h4>Calcula tu presupuesto</h4>
+
+            <input class="controls" type="number" min="0" id="mayores" placeholder="¿Cuántos invitados mayores tendrá su evento?">
+            <input class="controls" type="number" min="0" id="menores" placeholder="¿Cuántos invitados menores tendrá su evento?">
+            <h5>¿Qué servicio desea contratar?</h5>
+            <button class="botons" type="button" onclick="silver();">Silver</button>
+            <button class="botons" type="button" onclick="gold();">Gold</button>
+            <button class="botons" type="button" onclick="black();">Black</button>
+
+
+            <h5>La barra para su evento tiene un valor de: $<span id="resultado"></span></h5>
+
+            <button class="botons" type="button" onclick="empty();">Limpiar</button>
+
+            
+            <h5>Ahora contanos que te gustaría para la barra de tu evento</h5>
+
+
+        <select id="beb1" class="controls" onChange="bebida1()">
+            <option value="none">Seleccione una de la lista</option>
+            <option value="gin">Gin (Bombay Sapphire, Gordon´s)</option>
+            <option value="fernet">Fernet Branca</option>
+            <option value="ron">Ron Havana Club</option>
+            <option value="vodka">Vodka Skyy</option>
+            <option value="bourbon">Bourbon Jim Beam</option>
+            <option value="scotch">Scotch Jhonnie Walker</option>
+            <option value="bitter">Campari</option>
+            <option value="aperol">Aperol</option>
+            <option value="cynar">Cynar</option>
+            <option value="vermouth">Vermouth (Martini)</option>
+		</select>
+        <select id="beb2" class="controls" onChange="bebida2()">
+            <option value="none">Seleccione una de la lista</option>
+            <option value="gin">Gin (Bombay Sapphire, Gordon´s)</option>
+            <option value="fernet">Fernet Branca</option>
+            <option value="ron">Ron Havana Club</option>
+            <option value="vodka">Vodka Skyy</option>
+            <option value="bourbon">Bourbon Jim Beam</option>
+            <option value="scotch">Scotch Jhonnie Walker</option>
+            <option value="bitter">Campari</option>
+            <option value="aperol">Aperol</option>
+            <option value="cynar">Cynar</option>
+            <option value="vermouth">Vermouth (Martini)</option>
+        </select>
+        <select id="beb3" class="controls" onChange="bebida3()">
+            <option value="none">Seleccione una de la lista</option>
+            <option value="gin">Gin (Bombay Sapphire, Gordon´s)</option>
+            <option value="fernet">Fernet Branca</option>
+            <option value="ron">Ron Havana Club</option>
+            <option value="vodka">Vodka Skyy</option>
+            <option value="bourbon">Bourbon Jim Beam</option>
+            <option value="scotch">Scotch Jhonnie Walker</option>
+            <option value="bitter">Campari</option>
+            <option value="aperol">Aperol</option>
+            <option value="cynar">Cynar</option>
+            <option value="vermouth">Vermouth (Martini)</option>
+            </select>
+
+            <input type="text" class="selected" id="text1">
+            <input type="text" class="selected" id="text2">
+            <input type="text" class="selected"id="text3">
+                
+
+            <button class="botons" type="button" id="btnSalvarCliente">Enviar</button>
+            <p><a href="index.html">Vuelta al inicio</a></p>
+        </form>
+        
+    </div>    
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Mi script -->
+    
+    <script src="presujson.js"></script>
+    <script src="presupjs.js"></script>
+
+
+</body>
+
+</html>
