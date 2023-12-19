@@ -1,5 +1,5 @@
 First personal proyect! <hr/>
-Made for the JavasCript course on https://www.coderhouse.com
+Made for the JavaScript course on https://www.coderhouse.com
 
 Mock page for a bar catering service created with HTML5, CSS3, JQuery and JavasCript
 
